@@ -8,3 +8,4 @@ from flaskapp import app as application
 #
 # Below for testing only
 #
+httpd.serve_forever()
