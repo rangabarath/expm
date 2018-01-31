@@ -1,7 +1,7 @@
 from eve import Eve
 from eve_swagger import swagger, add_documentation
 
-app = Eve()
+app = Eve(settings='settings.py')
 app.register_blueprint(swagger)
 
 # required. See http://swagger.io/specification/#infoObject for details.
