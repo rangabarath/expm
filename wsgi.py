@@ -3,11 +3,11 @@ from eve_swagger import swagger, add_documentation
 import os
 
 SETTINGS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'settings.py')
-app = Eve(settings=SETTINGS_PATH)
-app.register_blueprint(swagger)
+application = Eve(settings=SETTINGS_PATH)
+application.register_blueprint(swagger)
 
 # required. See http://swagger.io/specification/#infoObject for details.
-app.config['SWAGGER_INFO'] = {
+application.config['SWAGGER_INFO'] = {
     'title': 'Data Source API',
     'version': '1.0',
     'description': 'Provides Rest API for MongoDB database',
@@ -16,7 +16,7 @@ app.config['SWAGGER_INFO'] = {
 }
 
 # optional. Will use flask.request.host if missing.
-app.config['SWAGGER_HOST'] = 'http://datasource-cosmos.app.caascloud.net'
+application.config['SWAGGER_HOST'] = 'http://datasource-cosmos.app.caascloud.net'
 
 # optional. Add/Update elements in the documentation at run-time without deleting subtrees.
 add_documentation({'paths': {'/status': {'get': {'parameters': [
@@ -30,4 +30,4 @@ add_documentation({'paths': {'/status': {'get': {'parameters': [
 }}}})
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
