@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from eve import Eve
 from eve_swagger import swagger, add_documentation
 
@@ -29,3 +30,17 @@ add_documentation({'paths': {'/status': {'get': {'parameters': [
 
 if __name__ == '__main__':
     app.run()
+=======
+#
+# IMPORTANT: Put any additional includes below this line.  If placed above this
+# line, it's possible required libraries won't be in your searchable path
+#
+
+from flaskapp import app as application
+import os
+
+#
+# Below for testing only
+#
+
+>>>>>>> a4684931add9da6bca15a93ec3ab3ed6a11d398f

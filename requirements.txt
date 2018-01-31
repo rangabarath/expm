@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 gunicorn
 Eve
 eve_swagger
+=======
+Flask==0.10.1
+>>>>>>> a4684931add9da6bca15a93ec3ab3ed6a11d398f
