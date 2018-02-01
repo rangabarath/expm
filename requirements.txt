@@ -1,3 +1,14 @@
 gunicorn
 Eve
 eve_swagger
+Flask
+Cerberus
+Events
+itsdangerous
+Jinja2
+MarkupSafe
+pymongo
+simplejson
+Werkzeug
+Yaml
+jsonschema
