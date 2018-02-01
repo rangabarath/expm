@@ -1,5 +1,5 @@
 import os
-from setuptools import setuptools
+from setuptools import setup
 
 setup(
 	name = "expm",
