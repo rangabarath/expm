@@ -1,4 +1,3 @@
 gunicorn
 Eve
 eve_swagger
-pyyaml
