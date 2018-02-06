@@ -9,4 +9,8 @@ setup(
 	author_email = "nilofar.z.rahmani@exxommobil.com",
 	description = "Installs required packages",
 	url = "https://github.com/ranganathanbarath/expm",
+	dependency_links=[
+		'git@gitserver.xtonet.com:NetworkAutomationFramework/netCatz-pypi.git'
+	]
 )
+
